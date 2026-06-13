@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg-primary:#000000;--bg-secondary:#0A0A0A;--bg-card:#141414;--bg-card-hover:#1E1E1E;--accent-cyan:#4D8FFF;--accent-cyan-dim:rgba(77,143,255,0.10);--accent-gold:#AAAAAA;--accent-gold-dim:rgba(170,170,170,0.10);--text-primary:#FFFFFF;--text-secondary:#AAAAAA;--text-muted:#555555;--border:rgba(255,255,255,0.12);--border-subtle:rgba(255,255,255,0.06);--gradient-cyan:linear-gradient(135deg,#4D8FFF,#1A5FFF);--gradient-gold:linear-gradient(135deg,#CCCCCC,#888888);--shadow-cyan:0 0 40px rgba(77,143,255,0.15);--radius:16px;--radius-sm:8px}
+:root{--bg-primary:#09101F;--bg-secondary:#0D1528;--bg-card:#131D33;--bg-card-hover:#192033;--accent-cyan:#C9A052;--accent-cyan-dim:rgba(201,160,82,0.10);--accent-gold:#C9A052;--accent-gold-dim:rgba(201,160,82,0.10);--text-primary:#FFFFFF;--text-secondary:#A0AABB;--text-muted:#4A5568;--border:rgba(201,160,82,0.20);--border-subtle:rgba(255,255,255,0.07);--gradient-cyan:linear-gradient(135deg,#C9A052,#A07830);--gradient-gold:linear-gradient(135deg,#C9A052,#A07830);--shadow-cyan:0 0 40px rgba(201,160,82,0.15);--radius:16px;--radius-sm:8px}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;background:var(--bg-primary);color:var(--text-primary);line-height:1.6;overflow-x:hidden}
@@ -39,25 +39,25 @@ section{padding:6rem 0}
 .reveal.visible{opacity:1;transform:translateY(0)}
 .reveal-delay-1{transition-delay:.1s}.reveal-delay-2{transition-delay:.2s}.reveal-delay-3{transition-delay:.3s}.reveal-delay-4{transition-delay:.4s}
 .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.8rem;border-radius:8px;font-size:.9rem;font-weight:600;transition:all .25s ease;letter-spacing:.01em}
-.btn-primary{background:var(--gradient-cyan);color:#000;box-shadow:0 4px 20px rgba(77,143,255,.3)}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(77,143,255,.45)}
+.btn-primary{background:var(--gradient-cyan);color:#0D1528;box-shadow:0 4px 20px rgba(201,160,82,.3)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(201,160,82,.45)}
 .btn-outline{border:1px solid var(--accent-cyan);color:var(--accent-cyan);background:transparent}
 .btn-outline:hover{background:var(--accent-cyan-dim);transform:translateY(-2px)}
-.btn-gold{background:var(--gradient-gold);color:#000;box-shadow:0 4px 20px rgba(170,170,170,.3)}
-.btn-gold:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(170,170,170,.45)}
+.btn-gold{background:var(--gradient-gold);color:#000;box-shadow:0 4px 20px rgba(201,160,82,.3)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(201,160,82,.45)}
 .btn svg{width:16px;height:16px}
 .badge{display:inline-flex;align-items:center;gap:.4rem;padding:.35rem .85rem;border-radius:100px;font-size:.75rem;font-weight:600;letter-spacing:.05em}
-.badge-cyan{background:var(--accent-cyan-dim);color:var(--accent-cyan);border:1px solid rgba(77,143,255,.25)}
-.badge-gold{background:var(--accent-gold-dim);color:var(--accent-gold);border:1px solid rgba(170,170,170,.25)}
+.badge-cyan{background:var(--accent-cyan-dim);color:var(--accent-cyan);border:1px solid rgba(201,160,82,.25)}
+.badge-gold{background:var(--accent-gold-dim);color:var(--accent-gold);border:1px solid rgba(201,160,82,.25)}
 .badge-green{background:rgba(0,200,100,.12);color:#00C864;border:1px solid rgba(0,200,100,.25)}
 .card{background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius);padding:2rem;transition:all .3s ease}
 .card:hover{border-color:var(--border);box-shadow:var(--shadow-cyan);transform:translateY(-4px)}
-.card-icon{width:48px;height:48px;border-radius:12px;background:var(--accent-cyan-dim);border:1px solid rgba(77,143,255,.2);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem}
+.card-icon{width:48px;height:48px;border-radius:12px;background:var(--accent-cyan-dim);border:1px solid rgba(201,160,82,.2);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem}
 .card-icon svg{width:22px;height:22px;color:var(--accent-cyan)}
 
 /* NAVBAR */
 #navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1.25rem 0;transition:all .3s ease}
-#navbar.scrolled{background:rgba(0,0,0,.97);backdrop-filter:blur(20px);border-bottom:1px solid var(--border-subtle);padding:.9rem 0}
+#navbar.scrolled{background:rgba(9,16,31,.97);backdrop-filter:blur(20px);border-bottom:1px solid var(--border-subtle);padding:.9rem 0}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:2rem}
 .nav-logo{display:flex;align-items:center;gap:.75rem;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem}
 .nav-logo-icon{width:36px;height:36px;background:var(--gradient-cyan);border-radius:8px;display:flex;align-items:center;justify-content:center}
@@ -78,15 +78,15 @@ section{padding:6rem 0}
 /* HERO */
 #hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:8rem 0 5rem}
 .hero-bg{position:absolute;inset:0;z-index:0}
-.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(77,143,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(77,143,255,.04) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 80% 60% at 50% 50%,black 30%,transparent 100%)}
-.hero-glow-1{position:absolute;top:-20%;left:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(77,143,255,.08) 0%,transparent 70%);border-radius:50%}
-.hero-glow-2{position:absolute;bottom:-20%;right:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(170,170,170,.06) 0%,transparent 70%);border-radius:50%}
-.orbit-ring{position:absolute;border:1px solid rgba(77,143,255,.07);border-radius:50%;animation:rotate 30s linear infinite}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(201,160,82,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(201,160,82,.04) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 80% 60% at 50% 50%,black 30%,transparent 100%)}
+.hero-glow-1{position:absolute;top:-20%;left:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(201,160,82,.08) 0%,transparent 70%);border-radius:50%}
+.hero-glow-2{position:absolute;bottom:-20%;right:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(201,160,82,.06) 0%,transparent 70%);border-radius:50%}
+.orbit-ring{position:absolute;border:1px solid rgba(201,160,82,.07);border-radius:50%;animation:rotate 30s linear infinite}
 .orbit-ring:nth-child(1){width:700px;height:700px;top:50%;left:50%;transform:translate(-50%,-50%)}
 .orbit-ring:nth-child(2){width:1000px;height:1000px;top:50%;left:50%;transform:translate(-50%,-50%);animation-duration:50s;animation-direction:reverse}
 .orbit-dot{position:absolute;width:6px;height:6px;background:var(--accent-cyan);border-radius:50%;top:-3px;left:50%;box-shadow:0 0 10px var(--accent-cyan)}
 .hero-content{position:relative;z-index:1;max-width:780px}
-.hero-badge{display:inline-flex;align-items:center;gap:.5rem;padding:.4rem 1rem;border:1px solid rgba(77,143,255,.3);border-radius:100px;font-size:.8rem;font-weight:500;color:var(--accent-cyan);background:rgba(77,143,255,.06);margin-bottom:2rem;animation:fadeIn .8s ease both}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;padding:.4rem 1rem;border:1px solid rgba(201,160,82,.3);border-radius:100px;font-size:.8rem;font-weight:500;color:var(--accent-cyan);background:rgba(201,160,82,.06);margin-bottom:2rem;animation:fadeIn .8s ease both}
 .hero-badge-dot{width:6px;height:6px;background:var(--accent-cyan);border-radius:50%;animation:pulse 2s infinite}
 .hero-title{animation:fadeUp .8s ease .2s both;margin-bottom:1.5rem}
 .hero-sub{font-size:1.15rem;color:var(--text-secondary);max-width:580px;animation:fadeUp .8s ease .35s both;margin-bottom:2.5rem;line-height:1.8}
@@ -95,7 +95,7 @@ section{padding:6rem 0}
 .hero-stat-divider{width:1px;background:var(--border-subtle)}
 .hero-stat-num{font-family:'Space Grotesk',sans-serif;font-size:2.2rem;font-weight:700;line-height:1}
 .hero-stat-label{font-size:.8rem;color:var(--text-muted);margin-top:.25rem;letter-spacing:.03em}
-.hero-panel{background:rgba(10,26,46,.95);border:1px solid var(--border);border-radius:20px;padding:1.75rem;backdrop-filter:blur(20px);box-shadow:0 0 60px rgba(77,143,255,.15);animation:float 6s ease-in-out infinite}
+.hero-panel{background:rgba(10,26,46,.95);border:1px solid var(--border);border-radius:20px;padding:1.75rem;backdrop-filter:blur(20px);box-shadow:0 0 60px rgba(201,160,82,.15);animation:float 6s ease-in-out infinite}
 .signal-bars{display:flex;align-items:flex-end;gap:4px;height:40px}
 .signal-bar{width:8px;border-radius:4px 4px 0 0;background:var(--accent-cyan);opacity:.3}
 .signal-bar.active{opacity:1;animation:pulse 1.5s infinite}
@@ -125,7 +125,7 @@ section{padding:6rem 0}
 .about-highlight p{font-size:.85rem;margin:0;color:var(--text-secondary)}
 
 /* STATS BAND */
-#stats-band{padding:4rem 0;background:linear-gradient(135deg,rgba(77,143,255,.04),rgba(170,170,170,.02));border-top:1px solid var(--border-subtle);border-bottom:1px solid var(--border-subtle)}
+#stats-band{padding:4rem 0;background:linear-gradient(135deg,rgba(201,160,82,.04),rgba(201,160,82,.02));border-top:1px solid var(--border-subtle);border-bottom:1px solid var(--border-subtle)}
 .stats-band-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border-subtle)}
 .stats-band-item{background:var(--bg-primary);padding:2.5rem;text-align:center}
 .stats-band-num{font-family:'Space Grotesk',sans-serif;font-size:2.5rem;font-weight:700;margin-bottom:.4rem}
@@ -136,16 +136,16 @@ section{padding:6rem 0}
 .service-card{background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius);padding:2rem;transition:all .3s ease;position:relative;overflow:hidden}
 .service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--gradient-cyan);transform:scaleX(0);transform-origin:left;transition:transform .3s ease}
 .service-card:hover::before{transform:scaleX(1)}
-.service-card:hover{border-color:var(--border);box-shadow:0 8px 40px rgba(77,143,255,.12);transform:translateY(-4px)}
+.service-card:hover{border-color:var(--border);box-shadow:0 8px 40px rgba(201,160,82,.12);transform:translateY(-4px)}
 .service-num{font-size:.7rem;font-weight:700;letter-spacing:.12em;color:var(--text-muted);margin-bottom:1rem}
 .service-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1.25rem}
-.service-tag{font-size:.7rem;padding:.25rem .6rem;border-radius:100px;background:var(--accent-cyan-dim);color:var(--accent-cyan);border:1px solid rgba(77,143,255,.15)}
+.service-tag{font-size:.7rem;padding:.25rem .6rem;border-radius:100px;background:var(--accent-cyan-dim);color:var(--accent-cyan);border:1px solid rgba(201,160,82,.15)}
 
 /* INDUSTRIES */
 #industries{background:var(--bg-secondary)}
 .industries-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;margin-top:3rem}
 .industry-card{background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius);padding:1.75rem 1.25rem;text-align:center;transition:all .3s ease}
-.industry-card:hover{border-color:var(--accent-cyan);background:var(--bg-card-hover);transform:translateY(-4px);box-shadow:0 8px 30px rgba(77,143,255,.12)}
+.industry-card:hover{border-color:var(--accent-cyan);background:var(--bg-card-hover);transform:translateY(-4px);box-shadow:0 8px 30px rgba(201,160,82,.12)}
 .industry-icon{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;transition:all .3s}
 .industry-card:hover .industry-icon{transform:scale(1.1)}
 .industry-card h4{font-size:.9rem;margin-bottom:.5rem}
@@ -154,8 +154,8 @@ section{padding:6rem 0}
 /* PILOT */
 .pilot-phases{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
 .phase-card{background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius);padding:2rem;position:relative}
-.phase-card.active{border-color:rgba(77,143,255,.4);box-shadow:0 0 30px rgba(77,143,255,.1)}
-.phase-num{font-family:'Space Grotesk',sans-serif;font-size:3rem;font-weight:700;color:rgba(77,143,255,.12);line-height:1;margin-bottom:1rem}
+.phase-card.active{border-color:rgba(201,160,82,.4);box-shadow:0 0 30px rgba(201,160,82,.1)}
+.phase-num{font-family:'Space Grotesk',sans-serif;font-size:3rem;font-weight:700;color:rgba(201,160,82,.12);line-height:1;margin-bottom:1rem}
 .phase-status{display:inline-flex;align-items:center;gap:.4rem;font-size:.72rem;font-weight:600;margin-bottom:1.25rem}
 .phase-status.active-s{color:#00C864}
 .phase-status.active-s::before{content:'';width:6px;height:6px;background:#00C864;border-radius:50%;animation:pulse 2s infinite}
@@ -174,8 +174,8 @@ section{padding:6rem 0}
 .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;margin-top:3rem}
 .why-points{display:flex;flex-direction:column;gap:1.5rem}
 .why-point{display:flex;gap:1.25rem;padding:1.5rem;background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius);transition:all .3s}
-.why-point:hover{border-color:var(--border);box-shadow:0 4px 20px rgba(77,143,255,.1)}
-.wpi{width:44px;height:44px;min-width:44px;border-radius:10px;background:var(--accent-cyan-dim);border:1px solid rgba(77,143,255,.2);display:flex;align-items:center;justify-content:center}
+.why-point:hover{border-color:var(--border);box-shadow:0 4px 20px rgba(201,160,82,.1)}
+.wpi{width:44px;height:44px;min-width:44px;border-radius:10px;background:var(--accent-cyan-dim);border:1px solid rgba(201,160,82,.2);display:flex;align-items:center;justify-content:center}
 .wpi svg{width:20px;height:20px;color:var(--accent-cyan)}
 .why-point h4{margin-bottom:.35rem;font-size:.95rem}
 .why-point p{font-size:.85rem;margin:0}
@@ -192,29 +192,29 @@ section{padding:6rem 0}
 .partner-icon{width:64px;height:64px;border-radius:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;font-size:1.8rem}
 .partner-card h3{margin-bottom:.75rem}
 .partner-card p{font-size:.875rem}
-.partner-cta{text-align:center;margin-top:3rem;padding:3rem;background:linear-gradient(135deg,rgba(77,143,255,.06),rgba(170,170,170,.04));border:1px solid var(--border);border-radius:var(--radius);display:flex;flex-direction:column;align-items:center;gap:1.5rem}
+.partner-cta{text-align:center;margin-top:3rem;padding:3rem;background:linear-gradient(135deg,rgba(201,160,82,.06),rgba(201,160,82,.04));border:1px solid var(--border);border-radius:var(--radius);display:flex;flex-direction:column;align-items:center;gap:1.5rem}
 
 /* ROADMAP */
 #roadmap{background:var(--bg-secondary);position:relative;overflow:hidden}
 #roadmap::before{content:'';position:absolute;inset:0;background:url('/africa-network-map.jpg') center/cover no-repeat;opacity:0.07;z-index:0}
 #roadmap .container{position:relative;z-index:1}
 .roadmap-timeline{position:relative;margin-top:4rem;padding-left:2rem}
-.roadmap-timeline::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--accent-cyan),rgba(77,143,255,.1))}
+.roadmap-timeline::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--accent-cyan),rgba(201,160,82,.1))}
 .roadmap-item{position:relative;padding:0 0 3rem 2.5rem}
 .roadmap-item:last-child{padding-bottom:0}
 .roadmap-dot{position:absolute;left:-2.35rem;top:.25rem;width:16px;height:16px;border-radius:50%;background:var(--bg-primary);border:2px solid var(--accent-cyan)}
 .roadmap-dot.done{background:var(--accent-cyan)}
-.roadmap-dot.active{background:var(--accent-cyan);box-shadow:0 0 16px rgba(77,143,255,.6);animation:pulse 2s infinite}
+.roadmap-dot.active{background:var(--accent-cyan);box-shadow:0 0 16px rgba(201,160,82,.6);animation:pulse 2s infinite}
 .roadmap-year{font-size:.75rem;font-weight:700;letter-spacing:.1em;color:var(--accent-cyan);text-transform:uppercase;margin-bottom:.5rem}
 .roadmap-content{background:var(--bg-card);border:1px solid var(--border-subtle);border-radius:var(--radius);padding:1.75rem}
 .roadmap-content h3{margin-bottom:.6rem}
 .roadmap-content p{font-size:.875rem;margin-bottom:1rem}
 .roadmap-milestones{display:flex;flex-wrap:wrap;gap:.5rem}
-.roadmap-milestone{font-size:.75rem;padding:.3rem .7rem;border-radius:100px;background:var(--accent-cyan-dim);color:var(--accent-cyan);border:1px solid rgba(77,143,255,.15)}
+.roadmap-milestone{font-size:.75rem;padding:.3rem .7rem;border-radius:100px;background:var(--accent-cyan-dim);color:var(--accent-cyan);border:1px solid rgba(201,160,82,.15)}
 
 /* FOUNDER */
-.founder-card{background:linear-gradient(135deg,#141414,#0A0A0A);border:1px solid rgba(77,143,255,.25);border-radius:24px;padding:3rem;display:grid;grid-template-columns:auto 1fr;gap:3rem;align-items:center;max-width:900px;margin:0 auto;box-shadow:0 0 60px rgba(77,143,255,.1),inset 0 1px 0 rgba(255,255,255,.05)}
-.founder-avatar{width:180px;height:180px;border-radius:20px;overflow:hidden;border:3px solid var(--accent-cyan);box-shadow:0 0 30px rgba(77,143,255,.3);flex-shrink:0}
+.founder-card{background:linear-gradient(135deg,#131D33,#0D1528);border:1px solid rgba(201,160,82,.25);border-radius:24px;padding:3rem;display:grid;grid-template-columns:auto 1fr;gap:3rem;align-items:center;max-width:900px;margin:0 auto;box-shadow:0 0 60px rgba(201,160,82,.1),inset 0 1px 0 rgba(255,255,255,.05)}
+.founder-avatar{width:180px;height:180px;border-radius:20px;overflow:hidden;border:3px solid var(--accent-cyan);box-shadow:0 0 30px rgba(201,160,82,.3);flex-shrink:0}
 .founder-avatar img{width:100%;height:100%;object-fit:cover;display:block}
 .founder-name{font-size:1.5rem;font-weight:700;margin-bottom:.25rem}
 .founder-title{font-size:.9rem;color:var(--accent-cyan);margin-bottom:.25rem}
@@ -238,12 +238,12 @@ section{padding:6rem 0}
 .form-group{display:flex;flex-direction:column;gap:.4rem;margin-bottom:1rem}
 .form-label{font-size:.8rem;font-weight:500;color:var(--text-secondary)}
 .form-input{background:var(--bg-secondary);border:1px solid var(--border-subtle);border-radius:var(--radius-sm);padding:.85rem 1rem;font-family:inherit;font-size:.9rem;color:var(--text-primary);transition:all .2s;outline:none}
-.form-input:focus{border-color:var(--accent-cyan);box-shadow:0 0 0 3px rgba(77,143,255,.1)}
+.form-input:focus{border-color:var(--accent-cyan);box-shadow:0 0 0 3px rgba(201,160,82,.1)}
 .form-input::placeholder{color:var(--text-muted)}
 select.form-input{appearance:none;cursor:pointer}
 textarea.form-input{resize:vertical;min-height:120px}
 .form-submit{width:100%;padding:1rem;background:var(--gradient-cyan);color:#000;font-weight:700;font-size:.95rem;border-radius:8px;cursor:pointer;transition:all .25s;border:none;font-family:inherit}
-.form-submit:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(77,143,255,.4)}
+.form-submit:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(201,160,82,.4)}
 
 /* FOOTER */
 footer{background:var(--bg-primary);border-top:1px solid var(--border-subtle);padding:4rem 0 2rem}
@@ -357,9 +357,9 @@ footer{background:var(--bg-primary);border-top:1px solid var(--border-subtle);pa
     <div class="orbit-ring"><div class="orbit-dot"></div></div>
     <div class="orbit-ring"></div>
   </div>
-  <div class="container" style="text-align:center">
-    <div class="hero-content" style="max-width:860px;margin:0 auto">
-      <div class="hero-badge" style="justify-content:center">
+  <div class="container">
+    <div class="hero-content" style="max-width:680px">
+      <div class="hero-badge">
         <span class="hero-badge-dot"></span>
         Now Deploying — Greater Accra Pilot Active
       </div>
@@ -367,12 +367,12 @@ footer{background:var(--bg-primary);border-top:1px solid var(--border-subtle);pa
         Satellite Broadband<br>
         <span class="text-gradient">Built for Ghana</span>
       </h1>
-      <p class="hero-sub" style="margin:0 auto 2.5rem;max-width:560px;text-align:center">Enterprise-grade connectivity for businesses, schools, and communities — where fibre cannot reach.</p>
-      <div class="hero-btns" style="justify-content:center">
+      <p class="hero-sub" style="margin-bottom:2.5rem;max-width:520px">Enterprise-grade connectivity for businesses, schools, and communities — where fibre cannot reach.</p>
+      <div class="hero-btns">
         <a href="#contact" class="btn btn-primary">Partner With Us</a>
         <a href="#contact" class="btn btn-outline">Request Consultation</a>
       </div>
-      <div class="hero-stats" style="justify-content:center;margin-top:4rem">
+      <div class="hero-stats" style="margin-top:4rem">
         <div>
           <div class="hero-stat-num text-gradient">99.9%</div>
           <div class="hero-stat-label">Uptime SLA</div>
@@ -424,7 +424,7 @@ footer{background:var(--bg-primary);border-top:1px solid var(--border-subtle);pa
         <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;margin-bottom:1rem">
           <div style="border-radius:12px;overflow:hidden;margin-bottom:1.5rem;position:relative">
             <img src="/africa-network-map.jpg" alt="OrbitLinked Africa Coverage Map" style="width:100%;height:220px;object-fit:cover;display:block;opacity:.75">
-            <div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,rgba(0,0,0,.97))"></div>
+            <div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 40%,rgba(9,16,31,.97))"></div>
             <div style="position:absolute;bottom:1rem;left:1rem;right:1rem">
               <div style="font-size:.8rem;color:var(--accent-cyan);font-weight:600">🌍 Coverage Zone — Greater Accra (Phase I Active)</div>
             </div>
@@ -529,9 +529,9 @@ footer{background:var(--bg-primary);border-top:1px solid var(--border-subtle);pa
         <p style="margin:.75rem 0;font-size:.875rem">Affordable community broadband solutions for rural schools, health centres, and remote communities. Shared infrastructure models reduce per-unit costs and enable digital access in Ghana's most underserved areas.</p>
         <div class="service-tags"><span class="service-tag">Community Wi-Fi</span><span class="service-tag">Shared VSAT</span><span class="service-tag">Affordable</span></div>
       </div>
-      <div class="service-card reveal reveal-delay-3" style="background:linear-gradient(135deg,rgba(77,143,255,.06),rgba(170,170,170,.03));border-color:rgba(77,143,255,.2)">
+      <div class="service-card reveal reveal-delay-3" style="background:linear-gradient(135deg,rgba(201,160,82,.06),rgba(201,160,82,.03));border-color:rgba(201,160,82,.2)">
         <div class="service-num">+</div>
-        <div class="card-icon" style="background:var(--accent-gold-dim);border-color:rgba(170,170,170,.2)"><svg viewBox="0 0 24 24" fill="none" stroke="#AAAAAA" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg></div>
+        <div class="card-icon" style="background:var(--accent-gold-dim);border-color:rgba(201,160,82,.2)"><svg viewBox="0 0 24 24" fill="none" stroke="#C9A052" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg></div>
         <h3 class="text-gold">Custom Solutions</h3>
         <p style="margin:.75rem 0;font-size:.875rem">Every deployment is unique. Whether you're an NGO, mining company, or government agency — we design bespoke connectivity architectures to match your operational reality and budget.</p>
         <a href="#contact" class="btn btn-gold" style="margin-top:1rem;padding:.7rem 1.25rem;font-size:.83rem">Discuss Your Needs →</a>
@@ -550,8 +550,8 @@ footer{background:var(--bg-primary);border-top:1px solid var(--border-subtle);pa
     </div>
     <div class="industries-grid">
       <div class="industry-card reveal">
-        <div class="industry-icon" style="background:rgba(77,143,255,.1)">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4D8FFF" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        <div class="industry-icon" style="background:rgba(201,160,82,.1)">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C9A052" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
         </div>
         <h4>Education</h4>
         <p>Schools, universities, and e-learning institutions across all 16 regions</p>
@@ -566,12 +566,12 @@ footer{background:var(--bg-primary);border-top:1px solid var(--border-subtle);pa
         <div style="margin-top:1rem;display:flex;flex-wrap:wrap;gap:.35rem;justify-content:center"><span class="service-tag" style="background:rgba(255,100,100,.1);color:#FF6464;border-color:rgba(255,100,100,.2)">Hospitals</span><span class="service-tag" style="background:rgba(255,100,100,.1);color:#FF6464;border-color:rgba(255,100,100,.2)">Telemedicine</span></div>
       </div>
       <div class="industry-card reveal reveal-delay-2">
-        <div class="industry-icon" style="background:rgba(170,170,170,.1)">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#AAAAAA" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <div class="industry-icon" style="background:rgba(201,160,82,.1)">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C9A052" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         </div>
         <h4>Government</h4>
         <p>National agencies, ministries, and critical public sector infrastructure</p>
-        <div style="margin-top:1rem;display:flex;flex-wrap:wrap;gap:.35rem;justify-content:center"><span class="service-tag" style="background:rgba(170,170,170,.1);color:#AAAAAA;border-color:rgba(170,170,170,.2)">Ministries</span><span class="service-tag" style="background:rgba(170,170,170,.1);color:#AAAAAA;border-color:rgba(170,170,170,.2)">Agencies</span></div>
+        <div style="margin-top:1rem;display:flex;flex-wrap:wrap;gap:.35rem;justify-content:center"><span class="service-tag" style="background:rgba(201,160,82,.1);color:#C9A052;border-color:rgba(201,160,82,.2)">Ministries</span><span class="service-tag" style="background:rgba(201,160,82,.1);color:#C9A052;border-color:rgba(201,160,82,.2)">Agencies</span></div>
       </div>
       <div class="industry-card reveal reveal-delay-3">
         <div class="industry-icon" style="background:rgba(100,200,100,.1)">
@@ -688,7 +688,7 @@ footer{background:var(--bg-primary);border-top:1px solid var(--border-subtle);pa
           <div class="metric-row"><span class="metric-label">LEO Latency Target</span><span class="metric-value">&lt;50ms</span></div>
           <div class="metric-row"><span class="metric-label">GEO Latency</span><span class="metric-value">~600ms</span></div>
           <div class="metric-row"><span class="metric-label">Support Response Time</span><span class="metric-value">&lt;2 hours</span></div>
-          <div style="margin-top:1rem;padding:1.25rem;background:linear-gradient(135deg,rgba(77,143,255,.08),rgba(170,170,170,.04));border-radius:10px;border:1px solid var(--border)">
+          <div style="margin-top:1rem;padding:1.25rem;background:linear-gradient(135deg,rgba(201,160,82,.08),rgba(201,160,82,.04));border-radius:10px;border:1px solid var(--border)">
             <div style="font-size:.78rem;color:var(--text-muted);margin-bottom:.5rem">Why satellite over fibre for Ghana?</div>
             <p style="font-size:.83rem;margin:0">Over 60% of Ghana's institutions are outside fibre coverage. Satellite eliminates the infrastructure gap — delivering broadband today, not in 5 years.</p>
           </div>
@@ -729,7 +729,7 @@ footer{background:var(--bg-primary);border-top:1px solid var(--border-subtle);pa
     </div>
     <div style="margin-top:3rem;border-radius:var(--radius);overflow:hidden;position:relative;height:220px" class="reveal">
       <img src="/partnership.jpg" alt="OrbitLinked Partnership" style="width:100%;height:100%;object-fit:cover;display:block;opacity:.6">
-      <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(4,13,26,.8),rgba(77,143,255,.1))"></div>
+      <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(4,13,26,.8),rgba(201,160,82,.1))"></div>
       <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.75rem;text-align:center;padding:2rem">
         <div style="font-family:'Space Grotesk',sans-serif;font-size:1.6rem;font-weight:700">Building Connectivity Together</div>
         <p style="font-size:.95rem;max-width:480px;margin:0">A network of satellite operators, ISPs, NGOs, and government partners — all united by one mission: digital inclusion for Ghana.</p>
@@ -832,7 +832,7 @@ footer{background:var(--bg-primary);border-top:1px solid var(--border-subtle);pa
     </div>
     <div class="founder-card reveal">
       <div class="founder-avatar">
-        <img src="/founder.jpg" alt="Charles Obese — Founder & CEO, OrbitLinked Network Ltd" onerror="this.parentElement.innerHTML='<div style=\'width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(77,143,255,.15),rgba(170,170,170,.1));font-size:3.5rem\'>👨🏿‍💼</div>'">
+        <img src="/founder.jpg" alt="Charles Obese — Founder & CEO, OrbitLinked Network Ltd" onerror="this.parentElement.innerHTML='<div style=\'width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(201,160,82,.15),rgba(201,160,82,.1));font-size:3.5rem\'>👨🏿‍💼</div>'">
       </div>
       <div>
         <div class="founder-name">Charles Obese</div>
@@ -896,7 +896,7 @@ footer{background:var(--bg-primary);border-top:1px solid var(--border-subtle);pa
           <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8 8.09a16 16 0 0 0 6 6l.86-.86a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
           <div><div class="ci-label">Phone — USA</div><div class="ci-value">+1 770 912 1515</div></div>
         </div>
-        <div style="padding:1.5rem;background:linear-gradient(135deg,rgba(77,143,255,.06),rgba(170,170,170,.03));border:1px solid var(--border);border-radius:var(--radius)">
+        <div style="padding:1.5rem;background:linear-gradient(135deg,rgba(201,160,82,.06),rgba(201,160,82,.03));border:1px solid var(--border);border-radius:var(--radius)">
           <div style="font-size:.85rem;font-weight:600;margin-bottom:.5rem">Interested in accelerator programs?</div>
           <p style="font-size:.83rem;margin:0">OrbitLinked is actively seeking partnerships with Techstars, Y Combinator Africa, and impact-focused accelerators. Reach out to discuss our application.</p>
         </div>
@@ -1066,4 +1066,4 @@ async function handleSubmit(e){
 }
 </script>
 </body>
-</html>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
