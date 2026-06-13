@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg-primary:#0A192F;--bg-secondary:#0D1F3C;--bg-card:#112240;--bg-card-hover:#172B4D;--accent-cyan:#C9A84C;--accent-cyan-dim:rgba(201,168,76,0.10);--accent-gold:#C9A84C;--accent-gold-dim:rgba(201,168,76,0.10);--text-primary:#FFFFFF;--text-secondary:#A8B2C3;--text-muted:#4A5568;--border:rgba(201,168,76,0.20);--border-subtle:rgba(255,255,255,0.07);--gradient-cyan:linear-gradient(135deg,#C9A84C,#A07828);--gradient-gold:linear-gradient(135deg,#C9A84C,#A07828);--shadow-cyan:0 0 40px rgba(201,168,76,0.12);--radius:16px;--radius-sm:8px}
+:root{--bg-primary:#0A192F;--bg-secondary:#0D1F3C;--bg-card:#112240;--bg-card-hover:#172B4D;--accent-cyan:#C9A84C;--accent-cyan-dim:rgba(201,168,76,0.10);--accent-gold:#C9A84C;--accent-gold-dim:rgba(201,168,76,0.10);--text-primary:#FFFFFF;--text-secondary:#A8B2C3;--text-muted:#4A5568;--border:rgba(201,168,76,0.20);--border-subtle:rgba(255,255,255,0.07);--gradient-cyan:linear-gradient(135deg,#8B6914 0%,#C9972A 30%,#F0D060 55%,#C9972A 75%,#8B6914 100%);--gradient-gold:linear-gradient(135deg,#8B6914 0%,#C9972A 30%,#F0D060 55%,#C9972A 75%,#8B6914 100%);--shadow-cyan:0 0 40px rgba(201,168,76,0.12);--radius:16px;--radius-sm:8px}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;background:var(--bg-primary);color:var(--text-primary);line-height:1.6;overflow-x:hidden}
@@ -39,8 +39,8 @@ section{padding:6rem 0}
 .reveal.visible{opacity:1;transform:translateY(0)}
 .reveal-delay-1{transition-delay:.1s}.reveal-delay-2{transition-delay:.2s}.reveal-delay-3{transition-delay:.3s}.reveal-delay-4{transition-delay:.4s}
 .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.8rem;border-radius:8px;font-size:.9rem;font-weight:600;transition:all .25s ease;letter-spacing:.01em}
-.btn-primary{background:var(--gradient-cyan);color:#0A192F;box-shadow:0 4px 20px rgba(212,175,55,.3)}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(212,175,55,.45)}
+.btn-primary{background:linear-gradient(135deg,#8B6914 0%,#C9972A 30%,#F0D060 55%,#C9972A 75%,#8B6914 100%);color:#0A192F;box-shadow:0 4px 20px rgba(180,130,20,.35)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(180,130,20,.55);background:linear-gradient(135deg,#9B7820 0%,#D4A030 30%,#FFE070 55%,#D4A030 75%,#9B7820 100%)}
 .btn-outline{border:1px solid var(--accent-cyan);color:var(--accent-cyan);background:transparent}
 .btn-outline:hover{background:var(--accent-cyan-dim);transform:translateY(-2px)}
 .btn-gold{background:var(--gradient-gold);color:#000;box-shadow:0 4px 20px rgba(212,175,55,.3)}
@@ -366,8 +366,8 @@ footer{background:var(--bg-primary);border-top:1px solid var(--border-subtle);pa
         Enterprise-grade connectivity for businesses, schools, and communities — where fibre cannot reach.
       </p>
       <div style="display:flex;gap:16px;flex-wrap:wrap;">
-        <a href="#contact" style="background-color:#C9A84C;color:#0A192F;padding:15px 32px;text-decoration:none;font-weight:700;border-radius:4px;font-size:0.95rem;">Get Connected</a>
-        <a href="#contact" style="border:1px solid #D4AF37;color:#C9A84C;padding:15px 32px;text-decoration:none;font-weight:600;border-radius:4px;font-size:0.95rem;">Request Consultation</a>
+        <a href="#contact" style="background:linear-gradient(135deg,#8B6914 0%,#C9972A 30%,#F0D060 55%,#C9972A 75%,#8B6914 100%);color:#0A192F;padding:15px 32px;text-decoration:none;font-weight:700;border-radius:4px;font-size:0.95rem;letter-spacing:0.02em;">Get Connected</a>
+        <a href="#contact" style="border:1px solid #C9A84C;color:#C9A84C;padding:15px 32px;text-decoration:none;font-weight:600;border-radius:4px;font-size:0.95rem;">Request Consultation</a>
       </div>
     </div>
     <!-- Right: satellite image -->
